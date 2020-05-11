@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Михаил Кольцов](https://up.htmlacademy.ru/htmlcss/28/user/1042569).
-* Наставник: `Неизвестно`.
+* Наставник: [Михаил Поданев] (https://htmlacademy.ru/profile/mpodanev).
 
 ---
 
