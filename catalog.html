@@ -12,7 +12,7 @@
       </a>
       <nav>
         <ul class="header">
-            <li><a href="#"Студия href="#">Студия</a></li>
+            <li><a href="#">Студия</a></li>
             <li><a href="#">Клиенты</a></li>
             <li><a href="catalog.html">Магазин</a></li>
             <li><a href="#">Контакты</a></li>
@@ -20,13 +20,29 @@
         <img src="img/cart-icon.svg" alt="">
         <a href="#">Корзина</a>
       </nav>
-
   </header>
   <h1>Магазин готовых шаблонов</h1>
   <section>
     <ul>
-      <p>Стоимость:</p>
-      <p>Сортировать:</p>
+      <li><p>Стоимость:</p></li>
+      <li><p>Сортировать:</p></li>
+    </ul>
+    <form>
+      <p><b>Сетка</b></p>
+        <p><input type="radio" name="top" id="adaptiv">Адаптивная</p>
+        <p><input type="radio" name="top" id="fix">Фиксированная</p>
+        <p><input type="radio" name="top" id="flex">Резиновая</p>
+    </form>
+    <div>
+      <p>Особенности</p>
+      <p><input type="checkbox" name="features" id="slider" checked>Слайдер</p>
+      <p><input type="checkbox" name="features" id="advantage">Блок преимуществ</p>
+      <p><input type="checkbox" name="features" id="news" checked>Новости</p>
+      <p><input type="checkbox" name="features" id="galery">Галерея</p>
+      <p><input type="checkbox" name="features" id="basket">Корзина</p>
+      <input type="button" value="Показать">
+    </div>
+    <ul>
       <li><a href="#">По цене</a></li>
       <li><a href="#">По типу</a></li>
       <li><a href="#">По названию</a></li>
@@ -42,19 +58,19 @@
       <img src="img/img-sedona.jpg" width="360" height="576" alt="sedona">
       </article></li>
       <li><article>
-      <img src="img/img-pink 1.jpg" width="358" height="576" alt="pink">
+      <img src="img/img-pink-1.jpg" width="358" height="576" alt="pink">
       </article></li>
       <li><article>
-      <img src="img/limg-barbershop1.jpg" width="364" height="582" alt="borodinski">
+      <img src="img/img-barbershop1.jpg" width="364" height="582" alt="borodinski">
       </article></li>
       <li><article>
-      <img src="img/img-mishka 1.jpg" width="362" height="580" alt="mishka">
+      <img src="img/img-mishka-1.jpg" width="362" height="580" alt="mishka">
       </article></li>
       <li><article>
-      <img src="img/img-aplus 1.jpg" width="364" height="582" alt="school">
+      <img src="img/img-aplus-1.jpg" width="364" height="582" alt="school">
       </article></li>
       <li><article>
-        <img src="img/img-kvast 1.jpg" width="362" height="580" alt="kwast">
+        <img src="img/img-kvast-1.jpg" width="362" height="580" alt="kwast">
       </article></li>
     </ul>
     <ul>
@@ -66,7 +82,7 @@
   </section>
   <section>
     <div class="map">
-      <img src="img/map 1.jpg" width="1440" height="416" alt="Карта проезда">
+      <img src="img/map-1.jpg" width="1440" height="416" alt="Карта проезда">
       <p>NЁRDS DESIGN STUDIO</p>
       <p>191186, Санкт-Петербург,
         ул. Б.Конюшенная,д.19/8</p>
@@ -74,6 +90,13 @@
       <p>тел. +7(812) 275-75-75</p>
     </div>
   </section>
+  <form action="https://echo.htmlacademy.ru/courses" method="post">
+    <h2>Напишите нам</h2>
+    Ваше имя: <input type="text" name="yourname" id="yourname" value="Имя Фамилия">
+    Ваш e-mail: <input type="email" name="youremail" id="youremail" value="email@example.com">
+    Текст письма: <input type="text" name="yourmail" id="yourmail" value="В свободной форме">
+    <input type="submit" value="Отправить">
+  </form>
 </main>
   <footer>
     <div>
