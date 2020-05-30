@@ -27,21 +27,25 @@
       <li><p>Стоимость:</p></li>
       <li><p>Сортировать:</p></li>
     </ul>
-    <form>
-      <p><b>Сетка</b></p>
-        <p><input type="radio" name="top" id="adaptiv" checked>Адаптивная</p>
-        <p><input type="radio" name="top" id="fix">Фиксированная</p>
-        <p><input type="radio" name="top" id="flex">Резиновая</p>
+
+    <form action="https://echo.htmlacademy.ru/courses" method="get">
+      <fieldset>
+        <legend>Сетка</legend>
+        <label><input type="radio" name="top" value="adaptiv" checked>Адаптивная</label>
+        <label><input type="radio" name="top" value="fix">Фиксированная</label>
+        <label><input type="radio" name="top" value="flex">Резиновая</label>
+      </fieldset>
+      <fieldset>
+        <legend>Особенности</legend>
+        <label><input type="checkbox" name="features" value="slider" checked>Слайдер</label>
+        <label><input type="checkbox" name="features" value="advantage">Блок преимуществ</label>
+        <label><input type="checkbox" name="features" value="news" checked>Новости</label>
+        <label><input type="checkbox" name="features" value="galery">Галерея</label>
+        <label><input type="checkbox" name="features" value="basket">Корзина</label>
+        <input type="submit" value="Показать">
+      </fieldset>
     </form>
-    <div>
-      <p>Особенности</p>
-      <p><input type="checkbox" name="features" id="slider" checked>Слайдер</p>
-      <p><input type="checkbox" name="features" id="advantage">Блок преимуществ</p>
-      <p><input type="checkbox" name="features" id="news" checked>Новости</p>
-      <p><input type="checkbox" name="features" id="galery">Галерея</p>
-      <p><input type="checkbox" name="features" id="basket">Корзина</p>
-      <input type="button" value="Показать">
-    </div>
+
     <ul>
       <li><a href="#">По цене</a></li>
       <li><a href="#">По типу</a></li>
@@ -90,14 +94,7 @@
       <p>тел. +7(812) 275-75-75</p>
     </div>
   </section>
-  <form action="https://echo.htmlacademy.ru/courses" method="post">
-    <h2>Напишите нам</h2>
-    Ваше имя: <input type="text" name="yourname" id="yourname" value="Имя Фамилия">
-    Ваш e-mail: <input type="email" name="youremail" id="youremail" value="email@example.com">
-    Текст письма: <input type="text" name="yourmail" id="yourmail" value="В свободной форме">
-    <input type="submit" value="Отправить">
-  </form>
-</main>
+  </main>
   <footer>
     <div>
       <ul>
@@ -109,5 +106,12 @@
     <p>Давайте дружить, это выгодно!</p>
     <p>Скидка 10% для друзей из социальных сетей</p>
   </footer>
+  <form action="https://echo.htmlacademy.ru/courses" method="post">
+    <h2>Напишите нам</h2>
+    Ваше имя: <input type="text" name="yourname" id="yourname" placeholder="Имя Фамилия">
+    Ваш e-mail: <input type="email" name="youremail" id="youremail" placeholder="email@example.com">
+    Текст письма: <input type="text" name="yourmail" id="yourmail" placeholder="В свободной форме">
+    <input type="submit" value="Отправить">
+  </form>
 </body>
 </html>
