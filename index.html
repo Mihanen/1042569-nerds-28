@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/css.css" rel="stylesheet">
   </head>
   <body>
     <header>
@@ -21,13 +24,13 @@
       </nav>
     </header>
     <main>
-      <section>
+      <section class="under-header">
         <h1>Долго, дорого,<br>
         скурпулезно</h1>
         <p>Математически вывкеренный дизайн
         для вашего или мобильного приложения</p>
       </section>
-    <section>
+    <section class="features">
       <ul>
         <li>
           <img src="img/vebsites.jpg" width="300" height="146"  alt="Веб-сайты">
@@ -56,7 +59,7 @@
       дизайн-студия из Краснодара.</h2>
       <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет
       превыше креатива. Работаем не покладая рук, как роботы.</p>
-      <h3>Выполняем заказы на разработку:</h3>
+      <p class="std-text-bold">Выполняем заказы на разработку:</p>
       <ul>
         <li>Веб-сайтов любой сложности</li>
         <li>Мобильных приложений для iOS и Android</li>
@@ -65,9 +68,9 @@
     </div>
      <div>
       <img src="img/nerds-illustration.jpg" width="360" height="208" alt="nerds">
-      <h3>С 2004 года любим точность во всем:</h3>
+      <p class="std-text-bold">С 2004 года любим точность во всем:</p>
       <table>
-        <tr>
+        <tr class="percent">
          <th>146%</th>
          <th>100%</th>
          <th>50%</th>
@@ -107,10 +110,10 @@
        <li><a href="#"><img src="img/insta-icon.svg" alt="insta"></a></li>
       </ul>
       </div>
-      <p>Давайте дружить, это выгодно!</p>
+      <p class="lets-friend-footer">Давайте дружить, это выгодно!</p>
       <p>Скидка 10% для друзей из социальных сетей</p>
     </footer>
-    <form action="https://echo.htmlacademy.ru/courses" method="post">
+    <form class="write-to-us" action="https://echo.htmlacademy.ru/courses" method="post">
       <h2>Напишите нам</h2>
       Ваше имя: <input type="text" name="yourname" id="yourname" placeholder="Имя Фамилия">
       Ваш e-mail: <input type="email" name="youremail" id="youremail" placeholder="email@example.com">
@@ -119,3 +122,4 @@
     </form>
   </body>
 </html>
+
