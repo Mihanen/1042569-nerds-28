@@ -8,21 +8,21 @@
 </head>
 <body>
   <main>
-    <header>
+    <header class="logo">
       <a href="index.html">
         <img src="img/nerds-logo.svg" width="160" height="65" alt="logo">
-      </a>
-      <nav>
+     </a>
+      <nav >
         <ul class="header">
-            <li><a href="#">Студия</a></li>
-            <li><a href="#">Клиенты</a></li>
-            <li><a href="catalog.html">Магазин</a></li>
-            <li><a href="#">Контакты</a></li>
+            <li><a class="header-list" href="#">Студия</a></li>
+            <li><a class="header-list" href="#">Клиенты</a></li>
+            <li><a class="header-list" href="catalog.html">Магазин</a></li>
+            <li><a class="header-list" href="#">Контакты</a></li>
         </ul>
         <img src="img/cart-icon.svg" alt="">
-        <a href="#">Корзина</a>
+        <a class="header-list" href="#">Корзина</a>
       </nav>
-  </header>
+    </header>
   <h1>Магазин готовых шаблонов</h1>
   <section>
     <ul>
@@ -37,14 +37,14 @@
         <label><input type="radio" name="top" value="fix">Фиксированная</label>
         <label><input type="radio" name="top" value="flex">Резиновая</label>
       </fieldset>
-      <fieldset>
+      <input>
         <legend class="title-form">Особенности</legend>
         <label><input type="checkbox" name="features" value="slider" checked>Слайдер</label>
         <label><input type="checkbox" name="features" value="advantage">Блок преимуществ</label>
         <label><input type="checkbox" name="features" value="news" checked>Новости</label>
         <label><input type="checkbox" name="features" value="galery">Галерея</label>
         <label><input type="checkbox" name="features" value="basket">Корзина</label>
-        <input type="submit" value="Показать">
+        <input class="btn-title-form" type="submit" value="Показать">
       </fieldset>
     </form>
     <ul class="list-features">
@@ -98,11 +98,11 @@
   </main>
   <footer>
     <div>
-      <ul>
-        <li><a href="#"><img src="img/vk-icon.svg" alt="vk"></a></li>
-        <li><a href="#"><img src="img/fb-icon.svg" alt="fb"></a></li>
-        <li><a href="#"><img src="img/insta-icon.svg" alt="insta"></a></li>
-       </ul>
+     <ul class="sotial-list">
+     <li><button class="sotialset" href="#"><img class="sotial-ikon" src="img/vk-icon.png" width="26" height="15" alt="vk"></button></li>
+     <li><button class="sotialset" href="#"><img class="sotial-ikon" src="img/fb-icon.svg" width="26" height="15" alt="fb"></button></li>
+     <li><button class="sotialset" href="#"><img class="sotial-ikon" src="img/insta-icon.svg" width="26" height="15" alt="insta"></button></li>
+    </ul>
     </div>
     <p class="lets-friend-footer">Давайте дружить, это выгодно!</p>
     <p>Скидка 10% для друзей из социальных сетей</p>

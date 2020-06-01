@@ -13,11 +13,11 @@
   --active-yellow: #EAB534;
   --push-yellow: #E5A722;
   --basic-social: #e1e1e1;
-  --
-
+  --active-buton: #DFDFDF;
+  --push-buton: #D5D5D5;
 }
 body{
-  width: min-1440px;
+  min-width:  1460px;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   color: black;
@@ -40,19 +40,96 @@ header{
   font-weight: 500;
   line-height: 30px;
   color: black;
-
+  list-style: none;
+}
+.header{
+  list-style: none;
+}
+.header-list:hover{
+  color: red;
+}
+.header-list:active{
+  color: var(--basic-gray);
+}
+.header-list:focus{
+ border-bottom: 2px solid red;
 }
 a{
   text-decoration: none;
   color: black;
 }
-section .underheader {
+.logo img:active{
+  opacity: 0.3;
+}
+.under-header {
   background-color: var(--basic-header);
+}
+.under-header button {
+  width: 240px;
+  height: 50px;
+  border-radius: 3px;
+  border: none;
+  background-color: var(--basic-red);
+  color: var(--basic-main);
+  text-transform: uppercase;
+}
+.under-header button:hover{
+  background-color: var(--active-red);
+}
+.under-header button:active{
+  background-color: var(--push-red);
+  }
+.under-header-btn-text:active{
+  opacity: 0.3;
 }
 .features h3{
   font-size: 24px;
   text-transform: uppercase;
- }
+   }
+.features-list{
+  list-style: none;
+}
+.btn-order{
+  width: 160px;
+  height: 50px;
+  border-radius: 3px;
+  border: none;
+  color: var(--basic-main);
+  text-transform: uppercase;
+}
+.btn-sites{
+  background-color: var(--basic-red);
+}
+.btn-sites:hover{
+  background-color: var(--active-red);
+}
+.btn-sites:active{
+  background-color: var(--push-red);
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+.btn-apps{
+  background-color: var(--basic-green);
+}
+.btn-apps:hover{
+  background-color: var(--active-green);
+}
+.btn-apps:active{
+  background-color: var(--push-green);
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+.btn-ppoint{
+  background-color: var(--basic-yellow);
+}
+.btn-ppoint:hover{
+  background-color: var(--active-yellow);
+}
+.btn-ppoint:active{
+  background-color: var(--push-yellow);
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+.btn-order-text:active{
+  opacity: 0.3;
+}
 .percent{
   font-size: 45px;
 }
@@ -73,4 +150,50 @@ section .underheader {
 }
 .write-to-us {
   display: none;
+}
+.logo{
+  acti
+}
+.sotial-list{
+  list-style: none;
+}
+.sotialset{
+  width: 81px;
+  height: 81px;
+  background-color: var(--basic-gray);
+  border: none;
+  border-radius: 50%;
+}
+.sotialset:hover{
+  background-color: var(--active-red);
+}
+.sotialset:active{
+  background-color: var(--push-red);
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  opaity: 0.3;
+}
+.sotial-ikon:active{
+  opacity: 0.3;
+}
+
+
+
+.btn-title-form{
+  width: 260px;
+  height: 50px;
+  text-transform: uppercase;
+  background-color: var(--basic-header);
+  border: none;
+  border-radius: 3px;
+}
+.btn-title-form:hover{
+  background-color: var(--active-buton);
+}
+.btn-title-form:active{
+  background-color: var(--push-buton);
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  color: rgba(255, 255, 255, 0.3);
+}
+.radio .title-form{
+  background-image: image;
 }

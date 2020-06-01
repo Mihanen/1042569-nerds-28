@@ -8,50 +8,51 @@
     <link href="css/css.css" rel="stylesheet">
   </head>
   <body>
-    <header>
+    <header class="logo">
       <a>
         <img src="img/nerds-logo.svg" width="160" height="65" alt="logo">
      </a>
-      <nav>
+      <nav >
         <ul class="header">
-            <li><a href="#">Студия</a></li>
-            <li><a href="#">Клиенты</a></li>
-            <li><a href="catalog.html">Магазин</a></li>
-            <li><a href="#">Контакты</a></li>
+            <li><a class="header-list" href="#">Студия</a></li>
+            <li><a class="header-list" href="#">Клиенты</a></li>
+            <li><a class="header-list" href="catalog.html">Магазин</a></li>
+            <li><a class="header-list" href="#">Контакты</a></li>
         </ul>
         <img src="img/cart-icon.svg" alt="">
-        <a href="#">Корзина</a>
+        <a class="header-list" href="#">Корзина</a>
       </nav>
     </header>
     <main>
       <section class="under-header">
         <h1>Долго, дорого,<br>
         скурпулезно</h1>
-        <p>Математически вывкеренный дизайн
+        <p>Математически выверенный дизайн
         для вашего или мобильного приложения</p>
+        <button><p class="under-header-btn-text">Узнать больше</p></button>
       </section>
     <section class="features">
-      <ul>
+      <ul class="features-list">
         <li>
           <img src="img/vebsites.jpg" width="300" height="146"  alt="Веб-сайты">
           <h3>Веб-сайты</h3>
           <p>Мир никогда не будет прежним
             после того как увидит ваш сайт!</p>
-            <button>Заказать</button>
+            <button class="btn-order btn-sites"><p class="btn-order-text">Заказать</p></button>
         </li>
         <li>
           <img src="img/apps.jpg" width="300" height="146" alt="Приложения">
           <h3>Приложения</h3>
           <p>Покорите топ-10 приложений в
              AppStore и GooglePlay</p>
-            <button>Заказать</button>
+            <button class="btn-order btn-apps"><p class="btn-order-text">Заказать</p></button>
         </li>
         <li>
           <img src="img/ppoint.jpg" width="300" height="146" alt="Презентации">
           <h3>Презентации</h3>
           <p>Вы даже не подозреваете,
             насколько вы изумительны!</p>
-            <button>Заказать</button>
+            <button class="btn-order btn-ppoint"><p class="btn-order-text">Заказать</p></button>
         </li>
       </ul>
     <div>
@@ -104,10 +105,10 @@
       </main>
     <footer>
       <div>
-        <ul>
-       <li><a href="#"><img src="img/vk-icon.svg" alt="vk"></a></li>
-       <li><a href="#"><img src="img/fb-icon.svg" alt="fb"></a></li>
-       <li><a href="#"><img src="img/insta-icon.svg" alt="insta"></a></li>
+       <ul class="sotial-list">
+       <li><button class="sotialset" href="#"><img class="sotial-ikon" src="img/vk-icon.png" width="26" height="15" alt="vk"></button></li>
+       <li><button class="sotialset" href="#"><img class="sotial-ikon" src="img/fb-icon.svg" width="26" height="15" alt="fb"></button></li>
+       <li><button class="sotialset" href="#"><img class="sotial-ikon" src="img/insta-icon.svg" width="26" height="15" alt="insta"></button></li>
       </ul>
       </div>
       <p class="lets-friend-footer">Давайте дружить, это выгодно!</p>
