@@ -33,6 +33,10 @@ h3{
   font-weight: bold;
   font-size: 16px;
 }
+a{
+  text-decoration: none;
+  color: black;
+}
 header{
   background-color: var(--basic-header);
   font-size: 16px;
@@ -51,15 +55,13 @@ header{
 .header-list:active{
   color: var(--basic-gray);
 }
-.header-list:focus{
- border-bottom: 2px solid red;
-}
-a{
-  text-decoration: none;
-  color: black;
-}
 .logo img:active{
   opacity: 0.3;
+}
+ .active{
+  border-bottom: solid;
+  border-bottom-width: 2px;
+  border-bottom-color:red ;
 }
 .under-header {
   background-color: var(--basic-header);
@@ -78,10 +80,8 @@ a{
 }
 .under-header button:active{
   background-color: var(--push-red);
+  color: rgba(255, 255, 255, 0.3);
   }
-.under-header-btn-text:active{
-  opacity: 0.3;
-}
 .features h3{
   font-size: 24px;
   text-transform: uppercase;
@@ -106,6 +106,7 @@ a{
 .btn-sites:active{
   background-color: var(--push-red);
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  color: rgba(255, 255, 255, 0.3);
 }
 .btn-apps{
   background-color: var(--basic-green);
@@ -116,6 +117,7 @@ a{
 .btn-apps:active{
   background-color: var(--push-green);
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  color: rgba(255, 255, 255, 0.3);
 }
 .btn-ppoint{
   background-color: var(--basic-yellow);
@@ -126,12 +128,20 @@ a{
 .btn-ppoint:active{
   background-color: var(--push-yellow);
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
-}
-.btn-order-text:active{
-  opacity: 0.3;
+  color: rgba(255, 255, 255, 0.3);
 }
 .percent{
   font-size: 45px;
+}
+.logos-list{
+  list-style: none;
+  opacity: 0.2;
+}
+.logos-list:hover{
+  opacity: 1;
+}
+.logos-list:active{
+  opacity: 0.1;
 }
 .title-form {
   font-size: 18px;
@@ -147,6 +157,7 @@ a{
 
 .lets-friend-footer{
   font-size: 36px;
+  font-weight: bold;
 }
 .write-to-us {
   display: none;
@@ -160,24 +171,46 @@ a{
 .sotialset{
   width: 81px;
   height: 81px;
+  border-radius: 50%;
   background-color: var(--basic-gray);
   border: none;
-  border-radius: 50%;
+}
+.sotial-ikon-vk{
+  padding-left: 27px;
+  padding-top: 35px;
+  padding-right: 28px;
+  padding-bottom: 33px;
+}
+.sotial-ikon-fb{
+  padding-left: 35px;
+  padding-top: 31px;
+  padding-right: 34px;
+  padding-bottom: 28px;
+}
+.sotial-ikon-insta{
+  padding-left: 30px;
+  padding-top: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
 }
 .sotialset:hover{
   background-color: var(--active-red);
 }
 .sotialset:active{
   background-color: var(--push-red);
-  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
-  opaity: 0.3;
-}
-.sotial-ikon:active{
+  }
+.sotial-ikon-vk:active{
   opacity: 0.3;
 }
+.sotial-ikon-fb:active{
+  opacity: 0.3;
+}
+.sotial-ikon-insta:active{
+  opacity: 0.3;
+}
+footer{
 
-
-
+}
 .btn-title-form{
   width: 260px;
   height: 50px;
