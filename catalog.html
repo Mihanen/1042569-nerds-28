@@ -3,33 +3,37 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Нёрдс</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/css.css" rel="stylesheet">
 </head>
 <body>
-  <main>
-    <header class="logo">
-      <a href="index.html">
-        <img src="img/nerds-logo.svg" width="160" height="65" alt="logo">
-     </a>
-      <nav >
-        <ul class="header">
-          <li><a class="header-list" href="#">Студия</a></li>
+  <header>
+    <a href="index.html" class="logo">
+      <img src="img/nerds-logo.svg" width="160" height="65" alt="logo">
+    </a>
+    <nav class="nav-header">
+      <ul class="header">
+          <li><a class="header-list" href="index.html">Студия</a></li>
           <li><a class="header-list" href="#">Клиенты</a></li>
-          <li ><a class="header-list active" href="catalog.html">Магазин</a></li>
+          <li><a class="header-list active" href="catalog.html">Магазин</a></li>
           <li><a class="header-list" href="#">Контакты</a></li>
-        </ul>
-        <img src="img/cart-icon.svg" alt="">
-        <a class="header-list" href="#">Корзина</a>
-      </nav>
-    </header>
-  <h1>Магазин готовых шаблонов</h1>
-  <section>
+      </ul>
+    </nav>
+    <div>
+      <ul class="basket-header">
+        <li><img src="img/cart-icon.svg" alt=""></li>
+        <li><a class="header-list header-list-basket" href="#">Корзина</a></li>
+      </ul>
+    </div>
+  </header>
+  <main>
+   <h1 class="under-header-catalog">Магазин готовых шаблонов</h1>
+   <section>
     <ul>
       <li><p class="title-form">Стоимость:</p></li>
       <li><p class="title-form">Сортировать:</p></li>
     </ul>
-
     <form action="https://echo.htmlacademy.ru/courses" method="get">
       <fieldset>
         <legend class="title-form">Сетка</legend>
@@ -78,8 +82,8 @@
         <img src="img/img-kvast-1.jpg" width="362" height="580" alt="kwast">
       </article></li>
     </ul>
-    <ul>
-      <li>1</li>
+    <ul class="shablon-nbr-page">
+      <li><a class="shablon-nbr-page-btn" href="#">1</a></li>
       <li><a href="#">2</a></li>
       <li><a href="#">3</a></li>
       <li><a href="#">Следующая</a> </li>
@@ -89,23 +93,25 @@
     <div class="map">
       <img src="img/map-1.jpg" width="1440" height="416" alt="Карта проезда">
       <p>NЁRDS DESIGN STUDIO</p>
-      <p>191186, Санкт-Петербург,
+      <p class="map-text">191186, Санкт-Петербург,
         ул. Б.Конюшенная,д.19/8</p>
+      <p class="map-text">тел. +7(812) 275-75-75</p>
       <a href="#">Напишите нам</a>
-      <p>тел. +7(812) 275-75-75</p>
     </div>
   </section>
   </main>
   <footer>
     <div>
      <ul class="sotial-list">
-     <li class="sotialset"><a href="#"><img class="sotial-ikon-vk" src="img/vk-icon.png" width="26" height="15" alt="vk"></a></li>
-     <li class="sotialset"><a href="#"><img class="sotial-ikon-fb" src="img/fb-icon.svg" width="12" height="22" alt="fb"></a></li>
-     <li class="sotialset"><a href="#"><img class="sotial-ikon-insta" src="img/insta-icon.svg" width="21" height="21" alt="insta"></a></li>
-    </ul>
+       <li class="sotialset"><a href="#"><img class="sotial-ikon-vk" src="img/vk-icon.png" width="26" height="15" alt="vk"></a></li>
+       <li class="sotialset"><a href="#"><img class="sotial-ikon-fb" src="img/fb-icon.svg" width="12" height="22" alt="fb"></a></li>
+       <li class="sotialset"><a href="#"><img class="sotial-ikon-insta" src="img/insta-icon.svg" width="21" height="21" alt="insta"></a></li>
+     </ul>
     </div>
-    <p class="lets-friend-footer">Давайте дружить, это выгодно!</p>
-    <p>Скидка 10% для друзей из социальных сетей</p>
+    <div>
+      <p class="lets-friend-footer">Давайте дружить, это выгодно!</p>
+      <p class="light-black-text">Скидка 10% для друзей из социальных сетей</p>
+    </div>
   </footer>
   <form class="write-to-us" action="https://echo.htmlacademy.ru/courses" method="post">
     <h2>Напишите нам</h2>
