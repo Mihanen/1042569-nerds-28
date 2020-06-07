@@ -279,11 +279,30 @@ header {
 .title-form {
   font-size: 18px;
   text-transform: uppercase;
-}
+ }
+
+ .title-form-cost {
+  margin-left: 50px;
+  display: flex;
+  font-size: 18px;
+  text-transform: uppercase;
+ }
+
+ .title-form-radio {
+   list-style: none;
+ }
+
+ .title-form-checkbox {
+   list-style: none;
+ }
 
 .list-features{
+  list-style: none;
   font-size: 14px;
   text-transform: uppercase;
+  display: flex;
+  flex-direction: flex-end;
+  align-items: flex-end;
 }
 
 .std-text-bold{
@@ -387,7 +406,7 @@ footer {
 }
 
 .btn-title-form{
-  width: 260px;
+   width: 260px;
   height: 50px;
   text-transform: uppercase;
   background-color: var(--basic-header);
@@ -419,14 +438,38 @@ footer {
   width: 1440px;
 }
 
+.projects {
+display: flex;
+width: 1440px;
+flex-wrap: wrap;
+margin-left: 100px;
+}
+
+.project-form {
+  display: flex;
+  flex-wrap: wrap;
+  width: 260px;
+  height: auto;
+  vertical-align: auto;
+  flex-direction: column;
+
+}
+
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 860px;
+  margin-left: 140px;
+
+}
+
 .shablons {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
   width: 760px;
   justify-content: space-between;
+
 }
 
-.shablons li {
-  margin-top: 71px;
-}
+

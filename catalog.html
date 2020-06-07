@@ -29,44 +29,47 @@
   </header>
   <main>
    <h1 class="under-header-catalog">Магазин готовых шаблонов</h1>
-   <section>
-    <ul>
-      <li><p class="title-form">Стоимость:</p></li>
-      <li><p class="title-form">Сортировать:</p></li>
-    </ul>
-    <form action="https://echo.htmlacademy.ru/courses" method="get">
-      <fieldset>
-        <legend class="title-form">Сетка</legend>
-        <label><input type="radio" name="top" value="adaptiv" checked>Адаптивная</label>
-        <label><input type="radio" name="top" value="fix">Фиксированная</label>
-        <label><input type="radio" name="top" value="flex">Резиновая</label>
-      </fieldset>
-      <fieldset>
-        <legend class="title-form">Особенности</legend>
-        <label><input type="checkbox" name="features" value="slider" checked>Слайдер</label>
-        <label><input type="checkbox" name="features" value="advantage">Блок преимуществ</label>
-        <label><input type="checkbox" name="features" value="news" checked>Новости</label>
-        <label><input type="checkbox" name="features" value="galery">Галерея</label>
-        <label><input type="checkbox" name="features" value="basket">Корзина</label>
-        <input class="btn-title-form" type="submit" value="Показать">
-      </fieldset>
-    </form>
-    <ul class="list-features">
-      <li><a href="#">По цене</a></li>
-      <li><a href="#">По типу</a></li>
-      <li><a href="#">По названию</a></li>
-    </ul>
-    <ul>
-      <li><img src="img/icon-down-dir.svg" alt="down"></li>
-      <li><img src="img/icon-up-dir.svg" alt="up"></li>
-    </ul>
-  </section>
-  <section>
-    <ul class="shablons">
-      <li><article>
-      <img src="img/img-sedona.jpg" width="360" height="576" alt="sedona">
-      </article></li>
-      <li><article>
+   <section class="projects">
+    <div class="projects-form">
+      <p class="title-form">Стоимость:</p>
+      <form class="project-form" action="https://echo.htmlacademy.ru/courses" method="get">
+        <fieldset>
+          <legend class="title-form">Сетка</legend>
+          <ul class="title-form-radio">
+            <li><label><input type="radio" name="top" value="adaptiv" checked>Адаптивная</label></li>
+            <li><label><input type="radio" name="top" value="fix">Фиксированная</label></li>
+            <li><label><input type="radio" name="top" value="flex">Резиновая</label></li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend class="title-form">Особенности</legend>
+          <ul class="title-form-checkbox">
+            <li><label><input type="checkbox" name="features" value="slider" checked>Слайдер</label></li>
+            <li><label><input type="checkbox" name="features" value="advantage">Блок преимуществ</label></li>
+            <li><label><input type="checkbox" name="features" value="news" checked>Новости</label></li>
+            <li><label><input type="checkbox" name="features" value="galery">Галерея</label></li>
+            <li><label><input type="checkbox" name="features" value="basket">Корзина</label></li>
+          </ul>
+            <input class="btn-title-form" type="submit" value="Показать">
+        </fieldset>
+      </form>
+    </div>
+    <div class="projects-list">
+      <p class="title-form-cost">Сортировать:</p>
+      <ul class="list-features">
+        <li><a href="#">По цене</a></li>
+        <li><a href="#">По типу</a></li>
+        <li><a href="#">По названию</a></li>
+      </ul>
+      <ul>
+       <li><img src="img/icon-down-dir.svg" alt="down"></li>
+       <li><img src="img/icon-up-dir.svg" alt="up"></li>
+      </ul>
+      <ul class="shablons">
+        <li><article>
+        <img src="img/img-sedona.jpg" width="360" height="576" alt="sedona">
+        </article></li>
+        <li><article>
       <img src="img/img-pink-1.jpg" width="358" height="576" alt="pink">
       </article></li>
       <li><article>
@@ -88,7 +91,8 @@
       <li><a href="#">3</a></li>
       <li><a href="#">Следующая</a> </li>
     </ul>
-  </section>
+  </div>
+   </section>
   <section>
     <div class="map">
       <img src="img/map-1.jpg" width="1440" height="416" alt="Карта проезда">
