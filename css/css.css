@@ -216,7 +216,6 @@ header {
   font-size: 45px;
 }
 .under-percent{
-  font-weight: ;
   font-size: 16px;
   line-height: 18px;
 }
@@ -259,10 +258,6 @@ header {
 }
 .write-to-us {
   display: none;
-
-}
-.logo {
-  acti
 }
 .sotial-list {
   list-style: none;
