@@ -20,7 +20,7 @@
 }
 
 body{
-  min-width:  1460px;
+  min-width:  1440px;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   color: black;
@@ -28,6 +28,7 @@ body{
 
 h1{
   font-size: 55px;
+  font-weight: bold;
   line-height: 55px;
 }
 
@@ -47,28 +48,36 @@ a{
 }
 
 .nav-header {
-  display: flex;
-  justify-content: space-around;
+  margin-top: 58px;
+  position: relative;
+  margin-left: 118px;
 }
 
 header {
   background-color: var(--basic-header);
-  background-size: 170px;
+  background-size: 180px;
   font-size: 16px;
-  text-transform: uppercase;
-  font-weight: 500px;
-  line-height: 30px;
   color: black;
   list-style: none;
   display: grid;
-  height: 114px;
+  height: 115px;
   grid-template-columns: min-content 1fr  min-content;
   align-items: flex-end;
   width: 1440px;
+
+  }
+
+  .header-list {
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 30px;
   }
 
 .logo {
+  display: flex;
   margin-left: 140px;
+  margin-top: 29px;
+  margin-bottom: 6px;
 }
 
  .header{
@@ -99,6 +108,12 @@ header {
   list-style: none;
   display: flex;
   justify-content: flex-end;
+  padding-left: 247px;
+  margin-top: 75px;
+}
+.basket-header-ikon {
+  padding-top: 7px;
+
 }
 
 .header-list {
@@ -117,15 +132,24 @@ header {
 
 .under-header-list {
   margin-left: 140px;
-  padding-top: 65px;
+  padding-top: 41px;
   width: 400px;
-  height: 431px;
+  height: 389px;
+
+}
+
+.under-header h1 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
 }
 
 .under-header p{
+  display: flex;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 25px;
   color: var(--text-features);
+  margin-bottom: 37px;
 }
 
 .under-header button {
@@ -148,9 +172,12 @@ header {
 }
 
 .features-list h3 {
-  font-size: 30px;
+  font-size: 24px;
   line-height: 30px;
+  font-weight: bold;
   text-transform: uppercase;
+  margin-top: 21px;
+  margin-bottom: 16px;
 }
 
 .features-list{
@@ -158,13 +185,17 @@ header {
   display: flex;
   width: 1157px;
   margin-left: -40px;
-  margin-top: 82px;
+  margin-top: 80px;
   justify-content: start;
   justify-content: space-between;
 }
 
 .features-list p{
+  width: 260px;
   color: var(--text-features);
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 33px;
 }
 
 .features-list-1 {
@@ -233,6 +264,10 @@ header {
 }
 
 .about-us {
+  border-top: 2px solid #eee;
+  margin-top: 80px;
+  padding-top: 34px;
+  width: 651px;
   display: flex;
   width: 1157px;
   margin-left: 140px;
@@ -260,7 +295,6 @@ header {
   width: 1440px;
   margin-left: 172px;
   justify-content: start;
-  justify-content: space-beween;
 }
 
 .logos-list{
@@ -307,21 +341,34 @@ header {
 
 .std-text-bold{
   font-weight: bold;
+
 }
 
 .map-text {
   font-size: 16px;
   line-height: 18px;
   color: var(--text-write-to-us);
+  }
+
+.map {
+  background-color: #A6A6A6;
+  background-image: url(/img/map-1.jpg);
+
+}
+
+.lets-friend {
+  display: flex;
+  flex-direction: column;
+}
+
+.lets-friend :nth-child(2) {
+  margin-top: 10px;
 }
 
 .lets-friend-footer {
   font-size: 36px;
   font-weight: bold;
-}
-
-.write-to-us {
-  display: none;
+  margin-bottom: 0px;
 }
 
 .sotial-list {
@@ -329,11 +376,23 @@ header {
 }
 
 .sotialset {
+  display: flex;
   width: 81px;
   height: 81px;
   border-radius: 50%;
   background-color: var(--basic-gray);
   border: none;
+}
+
+li.sotialset {
+  margin-right: 0px;
+  margin-left: 9px;
+}
+
+h1.under-header-catalog {
+  padding-top: 64px;
+  display: flex;
+  justify-content: center;
 }
 
 .sotial-ikon-vk {
@@ -472,4 +531,65 @@ margin-left: 100px;
 
 }
 
+/*форма*/
+.write-to-us {
+  display: flex;
+  justify-content: start;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  margin-left: 240px;
+  padding-top: 63px;
+  padding-left: 100px;
+  padding-right: 99px;
+  width: 960px;
+  height: 590px;
+  background-color: #fff;
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
+  flex-direction: column;
+  font-weight: bold;
 
+  display: noe;
+}
+
+.write-to-us-btn{
+  width: 259px;
+  height: 50px;
+  border-radius: 3px;
+  border: none;
+  color: var(--basic-main);
+  text-transform: uppercase;
+  margin-top: 47px;
+}
+
+#yourname {
+  display: flex;
+  flex-direction: row;
+  width: 300px;
+  height: 50px;
+  border: 2px solid #D7DCDE;
+  margin-top: 9px;
+  box-sizing: border-box;
+  border-radius: 3px;
+  }
+
+#youremail {
+  display: flex;
+  flex-direction: row;
+  width: 300px;
+  height: 50px;
+  border: 2px solid #D7DCDE;
+  margin-top: 9px;
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+
+#yourmail {
+  display: flex;
+  width: 760px;
+  height: 118px;
+  border: 2px solid #D7DCDE;
+  text-align: start;
+  margin-top: 9px;
+  border-radius: 3px;
+}
+/*форма*/
