@@ -20,12 +20,10 @@
           <li><a class="header-list" href="#">Контакты</a></li>
       </ul>
     </nav>
-    <div>
-      <ul class="basket-header">
-        <li><img class="basket-header-ikon" src="img/cart-icon.svg" alt=""></li>
-        <li><a class="header-list header-list-basket" href="#">Корзина</a></li>
-      </ul>
+    <div class="basket-header">
+      <a class="header-list header-list-basket" href="#">Корзина</a>
     </div>
+   </header>
   </header>
   <main>
    <h1 class="under-header-catalog">Магазин готовых шаблонов</h1>
@@ -73,16 +71,16 @@
       <img src="img/img-pink-1.jpg" width="358" height="576" alt="pink">
       </article></li>
       <li><article>
-      <img src="img/img-barbershop1.jpg" width="364" height="582" alt="borodinski">
+      <img src="img/img-barbershop1.jpg" width="358" height="578" alt="borodinski">
       </article></li>
       <li><article>
-      <img src="img/img-mishka-1.jpg" width="362" height="580" alt="mishka">
+      <img src="img/img-mishka-1.jpg" width="358" height="578" alt="mishka">
       </article></li>
       <li><article>
-      <img src="img/img-aplus-1.jpg" width="364" height="582" alt="school">
+      <img src="img/img-aplus-1.jpg" width="358" height="578" alt="school">
       </article></li>
       <li><article>
-        <img src="img/img-kvast-1.jpg" width="362" height="580" alt="kwast">
+        <img src="img/img-kvast-1.jpg" width="358" height="580" alt="kwast">
       </article></li>
     </ul>
     <ul class="shablon-nbr-page">
@@ -93,16 +91,14 @@
     </ul>
   </div>
    </section>
-  <section>
-    <div class="map">
-      <img src="img/map-1.jpg" width="1440" height="416" alt="Карта проезда">
-      <p>NЁRDS DESIGN STUDIO</p>
-      <p class="map-text">191186, Санкт-Петербург,
-        ул. Б.Конюшенная,д.19/8</p>
-      <p class="map-text">тел. +7(812) 275-75-75</p>
-      <a href="#">Напишите нам</a>
+   <section class="map">
+    <div class="map-info">
+     <p class="map-info-heading">NЁRDS DESIGN STUDIO</p>
+     <p class="map-text">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+     <p class="map-text-phone">тел. +7 (812) 275-75-75</p>
+     <button class="map-btn btn-sites">Напишите нам</button>
     </div>
-  </section>
+   </section>
   </main>
   <footer>
     <div>
@@ -112,17 +108,18 @@
        <li class="sotialset"><a href="#"><img class="sotial-ikon-insta" src="img/insta-icon.svg" width="21" height="21" alt="insta"></a></li>
      </ul>
     </div>
-    <div>
+    <div class="lets-friend">
       <p class="lets-friend-footer">Давайте дружить, это выгодно!</p>
       <p class="light-black-text">Скидка 10% для друзей из социальных сетей</p>
     </div>
   </footer>
   <form class="write-to-us" action="https://echo.htmlacademy.ru/courses" method="post">
     <h2>Напишите нам</h2>
-    Ваше имя: <input type="text" name="yourname" id="yourname" placeholder="Имя Фамилия">
-    Ваш e-mail: <input type="email" name="youremail" id="youremail" placeholder="email@example.com">
-    Текст письма: <input type="text" name="yourmail" id="yourmail" placeholder="В свободной форме">
-    <input type="submit" value="Отправить">
+    <button  class="form-btn-close"href="#"></button>
+    <div class="write-to-us-name">Ваше имя: <input type="text" name="yourname" id="yourname" placeholder="Имя Фамилия"></div>
+    <div class="write-to-us-email">Ваш email: <input type="email" name="youremail" id="youremail" placeholder="email@example.com"></div>
+    <div class="write-to-us-mail">Текст письма: <textarea name="yourmail" id="yourmail" cols="30" rows="15" placeholder="В свободной форме"></textarea>
+    <input class="write-to-us-btn btn-sites" type="submit" value="Отправить">
   </form>
 </body>
 </html>
