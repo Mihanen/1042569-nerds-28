@@ -1,58 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>HTML Academy: Нёрдс</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-  <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/css.css" rel="stylesheet">
-</head>
-<body>
-  <header>
-    <a href="index.html" class="logo">
-      <img src="img/nerds-logo.svg" width="160" height="65" alt="logo">
-    </a>
-    <nav class="nav-header">
-      <ul class="header">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Нёрдс</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/css.css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <a href="index.html" class="logo">
+        <img src="img/nerds-logo.svg" width="160" height="65" alt="logo">
+      </a>
+      <nav class="nav-header">
+        <ul class="header">
           <li><a class="header-list" href="index.html">Студия</a></li>
           <li><a class="header-list" href="#">Клиенты</a></li>
           <li><a class="header-list active" href="catalog.html">Магазин</a></li>
           <li><a class="header-list" href="#">Контакты</a></li>
-      </ul>
-    </nav>
-    <div class="basket-header">
-      <a class="header-list header-list-basket" href="#">Корзина</a>
-    </div>
-   </header>
-  </header>
+        </ul>
+      </nav>
+      <div class="basket-header">
+        <a class="header-list header-list-basket" href="#">Корзина</a>
+      </div>
+    </header>
   <main>
-   <h1 class="under-header-catalog">Магазин готовых шаблонов</h1>
-   <section class="projects">
-    <div class="projects-form">
-      <p class="title-form">Стоимость:</p>
-      <form class="project-form" action="https://echo.htmlacademy.ru/courses" method="get">
-        <fieldset>
-          <legend class="title-form">Сетка</legend>
-          <ul class="title-form-radio">
-            <li><label><input type="radio" name="top" value="adaptiv" checked>Адаптивная</label></li>
-            <li><label><input type="radio" name="top" value="fix">Фиксированная</label></li>
-            <li><label><input type="radio" name="top" value="flex">Резиновая</label></li>
-          </ul>
-        </fieldset>
-        <fieldset>
-          <legend class="title-form">Особенности</legend>
-          <ul class="title-form-checkbox">
-            <li><label><input type="checkbox" name="features" value="slider" checked>Слайдер</label></li>
-            <li><label><input type="checkbox" name="features" value="advantage">Блок преимуществ</label></li>
-            <li><label><input type="checkbox" name="features" value="news" checked>Новости</label></li>
-            <li><label><input type="checkbox" name="features" value="galery">Галерея</label></li>
-            <li><label><input type="checkbox" name="features" value="basket">Корзина</label></li>
-          </ul>
+    <h1 class="under-header-catalog">Магазин готовых шаблонов</h1>
+    <section class="projects">
+      <div class="projects-form">
+        <form class="project-form" action="https://echo.htmlacademy.ru/courses" method="get">
+          <fieldset class="filter-item">
+            <legend>Стоимость:</legend>
+            <div class="range-filter">
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar" style="width: 30%; margin-left: 20%"></div>
+                </div>
+                <div class="toggle toggle-min" tabindex="0" style="
+                left: 20%
+              "></div>
+              <div class="toggle toggle-max" tabindex="0" style="
+                left: 50%
+              "></div>
+              </div>
+              <div class="price-controls">
+                <label class="min-price">
+                  от <input type="number" name="min-price" value="0">
+                </label>
+                <label class="max-price">
+                  до <input type="number" name="max-price" value="15000">
+                  </label>
+              </div>
+            </div>
+            <legend class="title-form">Сетка</legend>
+            <ul class="title-form-radio">
+              <li><label><input type="radio" name="top" value="adaptiv" checked>Адаптивная</label></li>
+              <li><label><input type="radio" name="top" value="fix">Фиксированная</label></li>
+              <li><label><input type="radio" name="top" value="flex">Резиновая</label></li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend class="title-form">Особенности</legend>
+            <ul class="title-form-checkbox">
+              <li><label><input type="checkbox" name="features" value="slider" checked>Слайдер</label></li>
+              <li><label><input type="checkbox" name="features" value="advantage">Блок преимуществ</label></li>
+              <li><label><input type="checkbox" name="features" value="news" checked>Новости</label></li>
+              <li><label><input type="checkbox" name="features" value="galery">Галерея</label></li>
+              <li><label><input type="checkbox" name="features" value="basket">Корзина</label></li>
+            </ul>
             <input class="btn-title-form" type="submit" value="Показать">
-        </fieldset>
-      </form>
-    </div>
-    <div class="projects-list">
+          </fieldset>
+        </form>
+      </div>
+      <div class="projects-list">
       <p class="title-form-cost">Сортировать:</p>
       <ul class="list-features">
         <li><a href="#">По цене</a></li>
@@ -82,23 +102,24 @@
       <li><article>
         <img src="img/img-kvast-1.jpg" width="358" height="580" alt="kwast">
       </article></li>
-    </ul>
-    <ul class="shablon-nbr-page">
+      </ul>
+      <ul class="shablon-nbr-page">
       <li><a class="shablon-nbr-page-btn" href="#">1</a></li>
       <li><a href="#">2</a></li>
       <li><a href="#">3</a></li>
       <li><a href="#">Следующая</a> </li>
-    </ul>
-  </div>
-   </section>
-   <section class="map">
-    <div class="map-info">
-     <p class="map-info-heading">NЁRDS DESIGN STUDIO</p>
-     <p class="map-text">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-     <p class="map-text-phone">тел. +7 (812) 275-75-75</p>
-     <button class="map-btn btn-sites">Напишите нам</button>
+      </ul>
     </div>
-   </section>
+    </section>
+    <section class="map">
+      <div class="map-info">
+        <p class="map-info-heading">NЁRDS DESIGN STUDIO</p>
+        <p class="map-text">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        <p class="map-text-phone">тел. +7 (812) 275-75-75</p>
+        <button class="map-btn btn-sites">Напишите нам</button>
+      </div>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6078360790436!2d30.31924939036048!3d59.938649302396776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1592760868692!5m2!1sru!2sru" width="1440" height="416" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+     </section>
   </main>
   <footer>
     <div>
