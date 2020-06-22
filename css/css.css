@@ -139,7 +139,6 @@ header {
 .under-header {
   background-color: var(--basic-header);
   width: 1440px;
-  margin: 0px auto;
 }
 
 .under-header-list {
