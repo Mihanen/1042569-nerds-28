@@ -589,6 +589,10 @@ li.sotialset {
 
 .shablon-nbr-page {
   list-style: none;
+  display: flex;
+  margin-top: 36px;
+  margin-left: 1px;
+  margin-bottom: -20px;
 }
 
 .shablon-nbr-page-btn {
@@ -618,7 +622,7 @@ footer {
 }
 
 .btn-title-form {
-   width: 260px;
+  width: 260px;
   height: 50px;
   text-transform: uppercase;
   background-color: var(--basic-header);
@@ -632,7 +636,31 @@ footer {
 
 .btn-title-form:active {
   background-color: var(--push-buton);
-  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.3);
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.btn-title-form-number-page {
+  width: 50px;
+  height: 50px;
+  text-transform: uppercase;
+  background-color: var(--basic-header);
+  border: none;
+  border-radius: 3px;
+  margin-right: 11px;
+}
+
+.btn-title-form-number-page:hover {
+  background-color: var(--active-buton);
+}
+
+.btn-title-form:hover {
+  background-color: var(--active-buton);
+}
+
+.btn-title-form-number-page:active {
+  background-color: var(--push-buton);
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.3);
   color: rgba(255, 255, 255, 0.3);
 }
 
@@ -824,7 +852,8 @@ form h2 {
   border: none;
   color: var(--basic-main);
   text-transform: uppercase;
-  margin-top: 175px;
+  margin-top: 395px;
+  margin-left: 101px;
   text-align: center;
   padding-left: 83px;
 }
