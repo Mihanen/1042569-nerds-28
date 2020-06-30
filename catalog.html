@@ -8,6 +8,7 @@
     <link href="css/css.css" rel="stylesheet">
   </head>
   <body>
+    <div class="header-all"></div>
     <header>
       <a href="index.html" class="logo">
         <img src="img/nerds-logo.svg" width="160" height="65" alt="logo">
@@ -25,6 +26,7 @@
       </div>
     </header>
     <main>
+      <div class="under-header-catalog-position"></div>
       <h1 class="under-header-catalog">Магазин готовых шаблонов</h1>
       <section class="projects">
         <div class="projects-form">
@@ -36,8 +38,8 @@
                 <div class="scale">
                   <div class="bar" style="width: 30%; margin-left: 20%"></div>
                 </div>
-                <div class="toggle toggle-min" tabindex="0" style="left: 20%"></div>
-                <div class="toggle toggle-max" tabindex="0" style="left: 50%"></div>
+                <div class="toggle toggle-min" tabindex="0" style="left: 7%"></div>
+                <div class="toggle toggle-max" tabindex="0" style="left: 62%"></div>
               </div>
               <div class="price-controls">
                 <label class="min-price">
@@ -48,23 +50,21 @@
                   </label>
               </div>
             </div>
-            <legend class="title-form">Сетка</legend>
+            <legend class="title-form">Сетка:</legend>
             <ul class="title-form-radio">
-              <li><label><input type="radio" name="top" value="adaptiv" checked>Адаптивная</label></li>
-              <li><label><input type="radio" name="top" value="fix">Фиксированная</label></li>
-              <li><label><input type="radio" name="top" value="flex">Резиновая</label></li>
+              <li><label><input class="visually-hidden filter-input-radio" type="radio" name="top" value="adaptiv" checked><span class="radio-filter"></span>Адаптивная</label></li>
+              <li><label><input class="visually-hidden filter-input-radio" type="radio" name="top" value="fix"><span class="radio-filter"></span>Фиксированная</label></li>
+              <li><label><input class="visually-hidden filter-input-radio" type="radio" name="top" value="flex"><span class="radio-filter"></span>Резиновая</label></li>
             </ul>
           </fieldset>
-          <fieldset>
-            <legend class="title-form">Особенности</legend>
-            <ul class="title-form-checkbox">
-              <li><label><input type="checkbox" name="features" value="slider" checked>Слайдер</label></li>
-              <li><label><input type="checkbox" name="features" value="advantage">Блок преимуществ</label></li>
-              <li><label><input type="checkbox" name="features" value="news" checked>Новости</label></li>
-              <li><label><input type="checkbox" name="features" value="galery">Галерея</label></li>
-              <li><label><input type="checkbox" name="features" value="basket">Корзина</label></li>
-            </ul>
-            <input class="btn-title-form" type="submit" value="Показать">
+          <fieldset class="fieldset-checkbox">
+            <legend class="title-form">Особенности:</legend>
+            <label class="title-form-label-check"><input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="features" value="slider" checked><span class="checkbox-filter"></span>Слайдер</label>
+            <label class="title-form-label-check"><input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="features" value="advantage"><span class="checkbox-filter"></span>Блок преимуществ</label>
+            <label class="title-form-label-check"><input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="features" value="news" checked><span class="checkbox-filter"></span>Новости</label>
+            <label class="title-form-label-check"><input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="features" value="galery"><span class="checkbox-filter"></span>Галерея</label>
+            <label class="title-form-label-check"><input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="features" value="basket"><span class="checkbox-filter"></span>Корзина</label>
+            <input class="btn-title-form btn-checkbox-radio" type="submit" value="Показать">
           </fieldset>
         </form>
         </div>
@@ -74,10 +74,8 @@
             <li><a href="#">По цене</a></li>
             <li><a href="#">По типу</a></li>
             <li><a href="#">По названию</a></li>
-          </ul>
-          <ul>
-            <li><img src="img/icon-down-dir.svg" alt="down"></li>
-            <li><img src="img/icon-up-dir.svg" alt="up"></li>
+            <li><a href="#"><img src="img/icon-down-dir.svg" alt="down"></a></li>
+            <li><a href="#"><img src="img/icon-up-dir.svg" alt="up"></a></li>
           </ul>
           <ul class="shablons">
             <li><article><img src="img/img-sedona.jpg" width="360" height="576" alt="sedona"></article></li>
@@ -88,22 +86,25 @@
             <li><article><img src="img/img-kvast-1.jpg" width="358" height="580" alt="kwast"></article></li>
           </ul>
           <ul class="shablon-nbr-page">
-            <li><button class="btn-title-form-number-page">1</button></li>
-            <li><button class="btn-title-form-number-page">2</button></li>
-            <li><button class="btn-title-form-number-page">3</button></li>
-            <li><button class="btn-title-form">Следующая</button> </li>
+            <li><a href="#" class="active-btn-catalog-page">1</a></li>
+            <li><a href="#" class="btn-title-form-number-page">2</a></li>
+            <li><a href="#" class="btn-title-form-number-page">3</a></li>
+            <li><a href="#" class="btn-title-form-number-page-next">Следующая</a> </li>
           </ul>
         </div>
       </section>
       <section class="map">
+        <div class="map-info-position">
         <div class="map-info">
-         <p class="map-info-heading">NЁRDS DESIGN STUDIO</p>
-         <p class="map-text">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-         <p class="map-text-phone">тел. +7 (812) 275-75-75</p>
-         <button class="map-btn btn-sites">Напишите нам</button>
+          <p class="map-info-heading">NЁRDS DESIGN STUDIO</p>
+          <p class="map-text">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          <p class="map-text-phone">тел. +7 (812) 275-75-75</p>
+          <button class="map-btn btn-sites">Напишите нам</button>
+         </div>
         </div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6078360790436!2d30.31924939036048!3d59.938649302396776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1592760868692!5m2!1sru!2sru" width="1440" height="416" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-     </section>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6078360790436!2d30.31924939036048!3d59.938649302396776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1592760868692!5m2!1sru!2sru" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+      </section>
     </main>
     <footer>
     <div>
@@ -126,5 +127,6 @@
       <div class="write-to-us-mail">Текст письма: <textarea name="yourmail" id="yourmail" cols="30" rows="15" placeholder="В свободной форме"></textarea></div>
       <input class="write-to-us-btn btn-sites" type="submit" value="Отправить">
     </form>
+    <div></div>
   </body>
 </html>

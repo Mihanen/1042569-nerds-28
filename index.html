@@ -8,29 +8,52 @@
     <link href="css/css.css" rel="stylesheet">
   </head>
   <body>
+    <div class="header-all"></div>
     <header>
-      <a class="logo">
+      </div>
+      <a href="index.html" class="logo">
         <img src="img/nerds-logo.svg" width="160" height="65" alt="logo">
       </a>
       <nav class="nav-header">
         <ul class="header">
-         <li><a class="header-list" href="index.html">Студия</a></li>
-         <li><a class="header-list" href="#">Клиенты</a></li>
-         <li><a class="header-list " href="catalog.html">Магазин</a></li>
-         <li><a class="header-list" href="#">Контакты</a></li>
+          <li><a class="header-list" href="index.html">Студия</a></li>
+          <li><a class="header-list" href="#">Клиенты</a></li>
+          <li><a class="header-list" href="catalog.html">Магазин</a></li>
+          <li><a class="header-list" href="#">Контакты</a></li>
         </ul>
       </nav>
       <div class="basket-header">
         <a class="header-list header-list-basket" href="#">Корзина</a>
-       </div>
+      </div>
     </header>
     <main>
       <section class="under-header">
-        <div class="under-header-list">
+        <div class="slide-selector">
+          <form>
+            <label><input type="radio" name="slide" value="1" checked></label>
+            <label><input type="radio" name="slide" value="2"></label>
+            <label><input type="radio" name="slide" value="3"></label>
+         </form>
+        </div>
+        <div class="under-header-list-1">
           <h1>Долго, дорого,<br>
           скрупулезно.</h1>
           <p>Математически выверенный дизайн <br>
            для вашего сайта или мобильного приложения</p>
+          <button class="under-header-btn">Узнать больше</button>
+        </div>
+        <div class="under-header-list-2">
+         <h1>Любим математику,<br>
+          как никто другой</h1>
+         <p>Никакого креатива, только математические формулы <br>
+          для рассета идеальных пропорций</p>
+          <button class="under-header-btn">Узнать больше</button>
+        </div>
+        <div class="under-header-list-3">
+          <h1>Только ночь,<br>
+          только хардкор.</h1>
+          <p>Работать днем, как все? Мы против этого. <br>
+           Ближе к полуночи работа только начинается</p>
           <button class="under-header-btn">Узнать больше</button>
         </div>
       </section>
@@ -90,20 +113,23 @@
       </section>
       <section>
         <ul class="logos">
-          <li class="logos-list"><img src="img/logo-html-academy.svg" width="199" height="68" alt="htmlacademy"></li>
-          <li class="logos-list"><img src="img/logo-barbershop.svg" width="209" height="90" alt="borodinsky"></li>
-          <li class="logos-list"><img src="img/logo-pink.svg" width="185" height="52" alt="pink"></li>
-          <li class="logos-list"><img src="img/logo-mishka.svg" width="173" height="84" alt="mishka"></li>
+          <li class="logos-list"><a href="#"><img src="img/logo-html-academy.svg" width="199" height="68" alt="htmlacademy"></a></li>
+          <li class="logos-list"><a href="#"><img src="img/logo-barbershop.svg" width="209" height="90" alt="borodinsky"></a></li>
+          <li class="logos-list"><a href="#"><img src="img/logo-pink.svg" width="185" height="52" alt="pink"></a></li>
+          <li class="logos-list"><a href="#"><img src="img/logo-mishka.svg" width="173" height="84" alt="mishka"></a></li>
         </ul>
       </section>
       <section class="map">
-       <div class="map-info">
-         <p class="map-info-heading">NЁRDS DESIGN STUDIO</p>
-         <p class="map-text">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-         <p class="map-text-phone">тел. +7 (812) 275-75-75</p>
-         <button class="map-btn btn-sites">Напишите нам</button>
-       </div>
-       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6078360790436!2d30.31924939036048!3d59.938649302396776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1592760868692!5m2!1sru!2sru" width="1440" height="416" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        <div class="map-info-position">
+        <div class="map-info">
+          <p class="map-info-heading">NЁRDS DESIGN STUDIO</p>
+          <p class="map-text">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          <p class="map-text-phone">тел. +7 (812) 275-75-75</p>
+          <button class="map-btn btn-sites">Напишите нам</button>
+         </div>
+        </div>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6078360790436!2d30.31924939036048!3d59.938649302396776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1592760868692!5m2!1sru!2sru" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
       </section>
     </main>
     <footer>
@@ -127,6 +153,7 @@
       <div class="write-to-us-mail">Текст письма: <textarea name="yourmail" id="yourmail" cols="30" rows="15" placeholder="В свободной форме"></textarea></div>
       <input class="write-to-us-btn btn-sites" type="submit" value="Отправить">
     </form>
+    <cript src="js/scripts.js"></script>
   </body>
 </html>
 
