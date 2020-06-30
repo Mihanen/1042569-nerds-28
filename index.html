@@ -29,33 +29,36 @@
     <main>
       <section class="under-header">
         <div class="slide-selector">
-          <form>
-            <label><input type="radio" name="slide" value="1" checked></label>
-            <label><input type="radio" name="slide" value="2"></label>
-            <label><input type="radio" name="slide" value="3"></label>
-         </form>
-        </div>
-        <div class="under-header-list-1">
+            <input type="radio" name="slide" id="slide-1" checked>
+            <input type="radio" name="slide" id="slide-2">
+            <input type="radio" name="slide" id="slide-3">
+            <label for="1"></label>
+            <label for="2"></label>
+            <label for="3"></label>
+        <ul>
+        <li class="under-header-list-1">
           <h1>Долго, дорого,<br>
           скрупулезно.</h1>
           <p>Математически выверенный дизайн <br>
            для вашего сайта или мобильного приложения</p>
           <button class="under-header-btn">Узнать больше</button>
-        </div>
-        <div class="under-header-list-2">
+        </li>
+        <li class="under-header-list-2">
          <h1>Любим математику,<br>
           как никто другой</h1>
          <p>Никакого креатива, только математические формулы <br>
           для рассета идеальных пропорций</p>
           <button class="under-header-btn">Узнать больше</button>
-        </div>
-        <div class="under-header-list-3">
+        </li>
+        <li class="under-header-list-3">
           <h1>Только ночь,<br>
           только хардкор.</h1>
           <p>Работать днем, как все? Мы против этого. <br>
            Ближе к полуночи работа только начинается</p>
           <button class="under-header-btn">Узнать больше</button>
-        </div>
+        </li>
+      </ul>
+    </div>
       </section>
       <section class="features">
         <ul class="features-list">
@@ -153,7 +156,7 @@
       <div class="write-to-us-mail">Текст письма: <textarea name="yourmail" id="yourmail" cols="30" rows="15" placeholder="В свободной форме"></textarea></div>
       <input class="write-to-us-btn btn-sites" type="submit" value="Отправить">
     </form>
-    <cript src="js/scripts.js"></script>
+    <script src="/js/script.js"></script>
   </body>
 </html>
 

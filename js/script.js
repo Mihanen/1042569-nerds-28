@@ -1,7 +1,7 @@
 
 
-var link = document.querySelector(".write-to-us");
-var popup = document.querySelector(".modal-login");
+var link = document.querySelector(".map-btn");
+var modal = document.querySelector(".write-to-us");
 var close = document.querySelector(".modal-close");
 
 link.addEventListener("click", function (evt) {

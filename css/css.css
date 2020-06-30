@@ -149,20 +149,25 @@ header {
 
 .under-header {
   background-color: var(--basic-header);
-  background-size: 100vw;
+  background-size 100vw;
   margin: 0 auto;
+  position: relative;
+}
+
+.under-header ul {
+  margin-top: 0px;
 }
 
 .under-header-list-1 {
   width: 1157px;
   background-image: url(../img/nerds-index-slide1.png);
   background-position-y: top;
-  margin-left: 140px;
+  margin-left 140px;
   margin: auto;
   background-repeat: no-repeat;
   background-position-x: 395px;
   padding-bottom: 80px;
-  display: none;
+  display none;
 }
 
 .under-header-list-1 h1 {
@@ -174,12 +179,12 @@ header {
   width: 1157px;
   background-image: url(../img/nerds-index-slide2.png);
   background-position-y: top;
-  margin-left: 140px;
+  margin-left 140px;
   margin: auto;
   background-repeat: no-repeat;
   background-position-x: 395px;
   padding-bottom: 80px;
-  display:  none;
+  display  none;
 }
 
 .under-header-list-2 h1 {
@@ -191,7 +196,7 @@ header {
   width: 1157px;
   background-image: url(../img/nerds-index-slide3.png);
   background-position-y: top;
-  margin-left: 140px;
+  margin-left 140px;
   margin: auto;
   background-repeat: no-repeat;
   background-position-x: 395px;
@@ -204,10 +209,36 @@ header {
   margin-top: 0px;
 }
 
+.slide-selector li {
+  display: none;
+}
+
+input[id="slide-1"]:checked ~ ul .under-header-list-1 {
+  display: block;
+}
+input[id="slide-2"]:checked ~ ul .under-header-list-2 {
+  display: block;
+}
+input[id="slide-3"]:checked ~ ul .under-header-list-3 {
+  display: block;
+}
+
 .slide-selector {
-    position: absolute;
+    position absolute;
     margin-left: 678px;
-    margin-top: 317px;
+    margin-top 317px;
+}
+
+#slide-2 {
+  margin-left: 20px;
+}
+
+#slide-3 {
+  margin-left: 40px;
+}
+
+.slide-selector input {
+  position: absolute;
 }
 
 .under-header h1 {
