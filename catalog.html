@@ -36,7 +36,7 @@
             <div class="range-filter">
               <div class="range-controls">
                 <div class="scale">
-                  <div class="bar" style="width: 30%; margin-left: 20%"></div>
+                  <div class="bar" style="width: 63%; margin-left: 7%"></div>
                 </div>
                 <div class="toggle toggle-min" tabindex="0" style="left: 7%"></div>
                 <div class="toggle toggle-max" tabindex="0" style="left: 62%"></div>
@@ -50,6 +50,8 @@
                   </label>
               </div>
             </div>
+          </fieldset>
+          <fieldset class="fieldset-radio">
             <legend class="title-form">Сетка:</legend>
             <ul class="title-form-radio">
               <li><label><input class="visually-hidden filter-input-radio" type="radio" name="top" value="adaptiv" checked><span class="radio-filter"></span>Адаптивная</label></li>
@@ -59,11 +61,11 @@
           </fieldset>
           <fieldset class="fieldset-checkbox">
             <legend class="title-form">Особенности:</legend>
-            <label class="title-form-label-check"><input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="features" value="slider" checked><span class="checkbox-filter"></span>Слайдер</label>
-            <label class="title-form-label-check"><input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="features" value="advantage"><span class="checkbox-filter"></span>Блок преимуществ</label>
-            <label class="title-form-label-check"><input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="features" value="news" checked><span class="checkbox-filter"></span>Новости</label>
-            <label class="title-form-label-check"><input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="features" value="galery"><span class="checkbox-filter"></span>Галерея</label>
-            <label class="title-form-label-check"><input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="features" value="basket"><span class="checkbox-filter"></span>Корзина</label>
+            <label class="title-form-label-check"><input class="visually-hidden" type="checkbox" name="features" value="slider" checked><span class="checkbox-filter"></span>Слайдер</label>
+            <label class="title-form-label-check"><input class="visually-hidden" type="checkbox" name="features" value="advantage"><span class="checkbox-filter"></span>Блок преимуществ</label>
+            <label class="title-form-label-check"><input class="visually-hidden" type="checkbox" name="features" value="news" checked><span class="checkbox-filter"></span>Новости</label>
+            <label class="title-form-label-check"><input class="visually-hidden" type="checkbox" name="features" value="galery"><span class="checkbox-filter"></span>Галерея</label>
+            <label class="title-form-label-check"><input class="visually-hidden" type="checkbox" name="features" value="basket"><span class="checkbox-filter"></span>Корзина</label>
             <input class="btn-title-form btn-checkbox-radio" type="submit" value="Показать">
           </fieldset>
         </form>
@@ -78,12 +80,62 @@
             <li><a href="#"><img src="img/icon-up-dir.svg" alt="up"></a></li>
           </ul>
           <ul class="shablons">
-            <li><article><img src="img/img-sedona.jpg" width="360" height="576" alt="sedona"></article></li>
-            <li><article><img src="img/img-pink-1.jpg" width="358" height="576" alt="pink"></article></li>
-            <li><article><img src="img/img-barbershop1.jpg" width="358" height="578" alt="borodinski"></article></li>
-            <li><article><img src="img/img-mishka-1.jpg" width="358" height="578" alt="mishka"></article></li>
-            <li><article><img src="img/img-aplus-1.jpg" width="358" height="578" alt="school"></article></li>
-            <li><article><img src="img/img-kvast-1.jpg" width="358" height="580" alt="kwast"></article></li>
+            <li>
+              <div class="shablons-popup">
+                <h3>Sedona</h3>
+                <p>Информационный сайт <br> для туристов</p>
+                <input class="write-to-us-btn btn-sites" type="button" value="9 900 ₽ ">
+              </div>
+              <a href="#">
+                <img src="img/img-sedona.jpg" width="358" height="576" alt="sedona">
+              </a>
+            </li>
+            <li>
+                <div class="shablons-popup">
+                  <h3>Pink App</h3>
+                  <p>Продуктовый лендинг приложения для iOS и Android</p>
+                  <input class="write-to-us-btn btn-sites" type="button" value="9 900 ₽ ">
+                </div>
+                <a href="#">
+                <img src="img/img-pink-1.jpg" width="358" height="576" alt="pink">
+              </a>
+            </li>
+            <li>
+                <div class="shablons-popup">
+                  <h3>Barbershop</h3>
+                  <p>Сайт салона красоты. <br> Для мужчин, да.</p>
+                  <input class="write-to-us-btn btn-sites" type="button" value="9 900 ₽ ">
+                </div>
+                <a href="#">
+                <img src="img/img-barbershop1.jpg" width="358" height="576" alt="borodinski"></a>
+            </li>
+            <li>
+                <div class="shablons-popup">
+                  <h3>Mishka</h3>
+                  <p>Интернет магазин <br> вязаных игрушек</p>
+                  <input class="write-to-us-btn btn-sites" type="button" value="9 900 ₽ ">
+                </div>
+                <a href="#">
+                <img src="img/img-mishka-1.jpg" width="358" height="576" alt="mishka"></a>
+            </li>
+            <li>
+                <div class="shablons-popup">
+                  <h3>A plus</h3>
+                  <p>Лендинг курсов повышения квалификации</p>
+                  <input class="write-to-us-btn btn-sites" type="button" value="9 900 ₽ ">
+                </div>
+                <a href="#">
+                <img src="img/img-aplus-1.jpg" width="358" height="576" alt="school"></a>
+            </li>
+            <li>
+                <div class="shablons-popup">
+                  <h3>Кваст</h3>
+                  <p>Промо-сайт производителя крафтового кваса</p>
+                  <input class="write-to-us-btn btn-sites" type="button" value="9 900 ₽ ">
+                </div>
+                <a href="#">
+                <img src="img/img-kvast-1.jpg" width="358" height="576" alt="kwast"></a>
+            </li>
           </ul>
           <ul class="shablon-nbr-page">
             <li><a href="#" class="active-btn-catalog-page">1</a></li>
@@ -103,7 +155,6 @@
          </div>
         </div>
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6078360790436!2d30.31924939036048!3d59.938649302396776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1592760868692!5m2!1sru!2sru" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-        </div>
       </section>
     </main>
     <footer>

@@ -1,12 +1,12 @@
 
 
-var link = document.querySelector(".map-btn");
+var link = document.querySelector(".write-to-us-btn");
 var modal = document.querySelector(".write-to-us");
 var close = document.querySelector(".modal-close");
 
-link.addEventListener("click", function (evt) {
+write-to-us-btn.addEventListener("click", function (evt) {
   evt.prevendDefault();
-  popup.classList.add("modal-show");
+  popup.classList.add("show-write-to-us");
 });
 
 close.addEventListener("click", function (evt) {
