@@ -261,15 +261,17 @@ input[id="slide-3"]:checked ~ ul .under-header-list-3 {
   background-repeat: no-repeat;
 }
 
-nput[id=slide-1]:checked ~ .slide-filter {
-  background-image: url(../img/insta-icon.svg);
-}
-
-.visually-hidden-slide:checked  {
+input[id=slide-1]:checked ~ label .slide-1-position {
   background-image: url(../img/index-slide-check.png);
-  background-repeat: no-repeat;
 }
 
+input[id=slide-2]:checked ~ label .slide-2-position {
+  background-image: url(../img/index-slide-check.png);
+}
+
+input[id=slide-3]:checked ~ label .slide-3-position {
+  background-image: url(../img/index-slide-check.png);
+}
 .slide-1-position {
   margin-top: 317px;
   margin-left: 505px;
