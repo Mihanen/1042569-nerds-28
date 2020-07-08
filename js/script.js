@@ -1,6 +1,6 @@
 
 
-var link = document.querySelector(".write-to-us-btn");
+var openform = document.querySelector(".write-to-us");
 var modal = document.querySelector(".write-to-us");
 var close = document.querySelector(".modal-close");
 

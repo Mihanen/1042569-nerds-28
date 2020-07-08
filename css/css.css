@@ -65,6 +65,7 @@ a {
 
 header {
   background-color: var(--basic-header);
+  background-size: 100vw;
   font-size: 16px;
   color: black;
   list-style: none;
@@ -77,12 +78,11 @@ header {
 }
 
 .header-all {
-  background-size: 100vw;
-    background-color: var(--basic-header);
-    position: absolute;
-    width: 100vw;
-    height: 115px;
-    z-index: 1;
+  background-color: var(--basic-header);
+  position: absolute;
+  width: -webkit-fill-available;
+  height: 115px;
+  z-index: 1;
 }
 
 .header-list {
@@ -149,6 +149,7 @@ header {
 
 .under-header {
   background-color: var(--basic-header);
+  background-size: 100vw;
   margin: 0 auto;
   position: relative;
   margin-top: -23px;
@@ -545,7 +546,11 @@ th.under-percent {
   padding-bottom: 35px;
 }
 
-.logos-list:not(:last-child)::after {
+.logos-list {
+  list-style: none;
+}
+
+.logos li:not(:last-child)::after {
   position: absolute;
   margin-left: 50px;
   margin-right: 0px;
@@ -555,9 +560,6 @@ th.under-percent {
   height: 52px;
   background: #eee;
 }
-
-.logos-list {
-list-style: none;}
 
 .logos-list:nth-child(2) {
   margin-right: 10px;
@@ -630,7 +632,7 @@ fieldset {
 
  .title-form-radio {
    list-style: none;
-   margin-bottom: 54px;
+   margin-bottom: 56px;
 }
 
 .title-form-radio li{
@@ -649,7 +651,7 @@ fieldset {
 }
 
 .fieldset-radio {
-  margin-top: 57px;
+  margin-top: 56px;
   margin-left: 29px;
   margin-bottom: 0px;
   height: 188px;
@@ -756,8 +758,9 @@ fieldset {
 }
 
 iframe {
-  width: 100vw;
+  width: -webkit-fill-available;
   height: 416px;
+  background-repeat: no-repeat;
 }
 
 .map-info {
@@ -997,7 +1000,6 @@ footer {
   margin: 0px auto;
   height: 210px;
   align-items: center;
-  padding-left: -10px;
   padding-bottom: 30px;
 }
 
@@ -1098,6 +1100,7 @@ margin: auto;
 .price-controls {
   display: flex;
   justify-content: space-between;
+  width: 262px;
 }
 
 
@@ -1108,8 +1111,9 @@ margin: auto;
 }
 
 .price-controls input {
-  width: 60px;
+  width: 50px;
   padding: 10px;
+  padding-left: 20px;
   margin-left: 10px;
   text-align: center;
   color: #283136;
@@ -1118,6 +1122,12 @@ margin: auto;
   background: #f1f1f1;
   font-family: inherit;
   font-size: inherit;
+}
+
+.max-price input {
+  width: 68px;
+  padding-right: 0px;
+  padding-left: 11px;
 }
 
 /*.Шаблоны каталог*/
@@ -1353,10 +1363,6 @@ div.write-to-us-email {
   background-image: url(../img/close-cross.svg);
   opacity: 0.1;
   border: none;
-}
-
-.show-write-to-us {
-  display block;
 }
 
 /*форма обратной связи.*/
