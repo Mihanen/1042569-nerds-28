@@ -68,7 +68,6 @@ header {
   background-size: 100vw;
   font-size: 16px;
   color: black;
-  list-style: none;
   display: grid;
   height: 115px;
   grid-template-columns: min-content 1fr  min-content;
@@ -420,7 +419,6 @@ input[id=slide-3]:checked ~ label .slide-3-position {
 .about-us {
   border-top: 2px solid #eee;
   padding-top: 34px;
-  width: 651px;
   display: flex;
   width: 1157px;
   margin: auto;
@@ -547,7 +545,10 @@ th.under-percent {
 }
 
 .logos-list {
+  position: relative;
+  top: 50%;
   list-style: none;
+  transform: translateY(-50%);
 }
 
 .logos li:not(:last-child)::after {
@@ -1022,8 +1023,6 @@ margin: auto;
   flex-wrap: wrap;
   width: 260px;
   height: auto;
-  vertical-align: auto;
-  flex-direction: column;
   margin-left: 99px;
 }
 
@@ -1366,12 +1365,3 @@ div.write-to-us-email {
 }
 
 /*форма обратной связи.*/
-
-label::before {
-  content: '';
-  background-image: url(lksjflskdjf);
-}
-
-input[type="checbox"]:checked + label::before {
-  background-image: url(lksdfjsldkjfslkf);
-}
