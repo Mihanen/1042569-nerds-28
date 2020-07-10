@@ -529,7 +529,7 @@ th.under-percent {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 1089px;
+  width: 1200px;
   margin-left: 172px;
   margin: auto;
   border-top:  2px solid #eee ;
@@ -537,7 +537,6 @@ th.under-percent {
   margin-bottom: 50px;
   margin-top: 33px;
   padding-top: 51px;
-  padding-left: 30px;
   padding-right: 40px;
   padding-bottom: 35px;
 }
@@ -545,26 +544,23 @@ th.under-percent {
 .logos-list {
   position: relative;
   list-style: none;
+  width: 25%;
+  text-align: center;
+}
+
+.logos-list li {
+  width: 272px;
 }
 
 .logos li:not(:last-child)::after {
   position: absolute;
-  margin-left: 50px;
-  margin-right: 0px;
-  list-style: none;
   content: "";
   width: 2px;
   height: 52px;
   background: #eee;
-  margin-top: 10px;
-}
-
-.logos-list:nth-child(2) {
-  margin-right: 10px;
-}
-
-.logos-list:nth-child(3) {
-  margin-right: 25px;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
 }
 
 .logos-list img{
