@@ -65,7 +65,7 @@ a {
 
 header {
   background-color: var(--basic-header);
-  background-size: 100vw;
+  background-size: 100%;
   font-size: 16px;
   color: black;
   display: grid;
@@ -624,7 +624,6 @@ fieldset {
 
  .title-form-radio {
    list-style: none;
-   margin-bottom: 56px;
 }
 
 .title-form-radio li{
