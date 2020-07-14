@@ -589,15 +589,16 @@ fieldset {
 
 .title-form-label-check {
   display: block;
-  padding-left: 2em;
-  margin-bottom: 22px;
+  padding-left: 27px;
+  padding-top: 5px;
+  margin-bottom: 17px;
 }
 
 .radio-filter{
   position: absolute;
   width: 2em;
   height: 2em;
-  margin-left: -2.5em;
+  margin-left: -37px;
   background-image: url(../img/radio-off.svg);
   opacity: 0.4;
   color: #283136;
@@ -624,10 +625,11 @@ fieldset {
 
  .title-form-radio {
    list-style: none;
+   padding-left: 36px;
 }
 
 .title-form-radio li{
-  margin-bottom: 23px;
+  margin-bottom: 22px;
 }
 
 .filter-option{
@@ -661,13 +663,15 @@ fieldset {
 .btn-checkbox-radio {
   margin-left: -9px;
   margin-top: 32px;
+  padding-top: 5px;
 }
 
 .checkbox-filter {
   position: absolute;
   width: 1.5em;
   height: 1.5em;
-  margin-left: -2.5em;
+  margin-left: -37px;
+  margin-top: -4px;
   background-image: url(../img/checkbox-off.svg);
   opacity: 0.4;
   color: #283136;
