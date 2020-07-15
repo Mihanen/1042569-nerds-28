@@ -21,7 +21,7 @@
 
 body {
   margin: 0px;
-  min-width:  1440px;
+  min-width:  1157px;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   color: black;
@@ -72,8 +72,8 @@ header {
   height: 115px;
   grid-template-columns: min-content 1fr  min-content;
   align-items: flex-end;
-  width: 1440px;
   margin: 0px auto;
+  width: 1157px;
 }
 
 .header-all {
@@ -92,7 +92,7 @@ header {
 
 .logo {
   display: flex;
-  margin-left: 140px;
+  margin-left: 6px;
   margin-top: 29px;
   margin-bottom: 6px;
   z-index: 1;
@@ -143,12 +143,12 @@ header {
 
 .header-list-basket {
   margin-left: 25px;
-  margin-right: 143px;
+  margin-right: 14px;
 }
 
 .under-header {
   background-color: var(--basic-header);
-  background-size: 100vw;
+  background-size: 100%;
   position: relative;
   margin-top: -23px;
 }
@@ -216,9 +216,10 @@ input[id="slide-3"]:checked ~ ul .under-header-list-3 {
 }
 
 .slide-selector {
-  width: 1160px;
+  width: 1157px;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 10px;
 }
 
 #slide-2 {
@@ -328,7 +329,7 @@ input[id=slide-3]:checked ~ label .slide-3-position {
 }
 
 .features {
-  width: 1440px;
+  width: 1157px;
   margin: 0px auto;
 }
 
@@ -346,11 +347,9 @@ input[id=slide-3]:checked ~ label .slide-3-position {
   display: flex;
   justify-content: start;
   padding: 0px;
+  margin-left: -95px;
 }
 
-.features-list {
-  margin-left: 40px;
-}
 
 .features-list li {
   margin-top: 64px;
@@ -796,7 +795,7 @@ iframe {
 
 .lets-friend {
   margin-top: 36px;
-  margin-left: 60px;
+  margin-left: 21px;
   display: flex;
   flex-direction: column;
 }
@@ -873,7 +872,7 @@ li.sotialset {
 .shablon-nbr-page {
   list-style: none;
   display: flex;
-  margin-top: 39px;
+  margin-top: 37px;
   margin-left: 1px;
   margin-bottom: -20px;
 }
@@ -890,14 +889,14 @@ footer {
   display: grid;
   grid-template-columns: 1fr 2fr ;
   margin: auto;
-  width: 1440px;
+  width: 1157px;
 }
 
 .sotial-list {
   display: flex;
   justify-content: start;
-  margin-left: 91px;
   margin-top: 58px;
+  padding-left: 0px;
 }
 
 .sotialset {
@@ -1005,10 +1004,9 @@ footer {
 
 .projects {
 display: flex;
-width: 1440px;
 flex-wrap: wrap;
-margin-left: 100px;
-margin: auto;
+margin: 0 auto;
+width: 1227px;
 }
 
 .project-form {
@@ -1017,13 +1015,12 @@ margin: auto;
   flex-wrap: wrap;
   width: 260px;
   height: auto;
-  margin-left: 99px;
 }
 
 .projects-list {
   display: flex;
   flex-wrap: wrap;
-  width: 860px;
+  width: 800px;
   margin-left: 140px;
 }
 
@@ -1235,6 +1232,12 @@ margin: auto;
   font-weight: bold;
   margin: auto;
   display: none;
+}
+
+.show-write-to-us {
+  display: flex;
+  position: absolute;
+  margin: 0 auto;
 }
 
 form h2 {

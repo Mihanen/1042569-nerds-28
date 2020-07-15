@@ -1,15 +1,13 @@
-
-
-var openform = document.querySelector(".write-to-us");
+var link = document.querySelector(".write-to-us-btn-form");
 var modal = document.querySelector(".write-to-us");
-var close = document.querySelector(".modal-close");
+var close = document.querySelector(".form-btn-close");
 
-write-to-us-btn.addEventListener("click", function (evt) {
-  evt.prevendDefault();
-  popup.classList.add("show-write-to-us");
+link.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  modal.classList.add("show-write-to-us");
 });
 
 close.addEventListener("click", function (evt) {
   evt.preventDeafault();
-  popup.classList.remove("modal-show");
+  modal.classList.remove("show-write-to-us");
 });
