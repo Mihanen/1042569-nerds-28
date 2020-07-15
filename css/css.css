@@ -430,7 +430,7 @@ input[id=slide-3]:checked ~ label .slide-3-position {
 }
 
 .about-us li {
-  background-image: url(../img/red_line.png);
+  background-image: url(../img/red_line1.png);
   background-repeat: no-repeat;
   background-position-y: 11px;
   padding-left: 35px;
