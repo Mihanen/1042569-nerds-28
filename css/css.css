@@ -130,7 +130,7 @@ header {
   padding-left: 262px;
   margin-top: 75px;
   padding-bottom: 14px;
-  background-image: url(../img/cart-icon.svg);
+  background-image: url(../img/cart_icon.svg);
   background-repeat: no-repeat;
   background-position-x: 247px;
   background-position-y: 7px;
@@ -160,7 +160,7 @@ header {
 }
 
 .under-header-list-1 {
-  background-image: url(../img/nerds-index-slide1.png);
+  background-image: url(../img/nerds_index_slide1.png);
   background-position-y: top;
   margin: auto;
   background-repeat: no-repeat;
@@ -174,7 +174,7 @@ header {
 }
 
 .under-header-list-2 {
-  background-image: url(../img/nerds-index-slide2.png);
+  background-image: url(../img/nerds_index_slide2.png);
   background-position-y: top;
   margin: auto;
   background-repeat: no-repeat;
@@ -188,7 +188,7 @@ header {
 }
 
 .under-header-list-3 {
-  background-image: url(../img/nerds-index-slide3.png);
+  background-image: url(../img/nerds_index_slide3.png);
   background-position-y: top;
   margin: auto;
   background-repeat: no-repeat;
@@ -257,20 +257,20 @@ input[id="slide-3"]:checked ~ ul .under-header-list-3 {
   position: absolute;
   width: 2em;
   height: 2em;
-  background-image: url(../img/index-slide-no-check.png);
+  background-image: url(../img/index_slide_no_check.png);
   background-repeat: no-repeat;
 }
 
 input[id=slide-1]:checked ~ label .slide-1-position {
-  background-image: url(../img/index-slide-check.png);
+  background-image: url(../img/index_slide_check.png);
 }
 
 input[id=slide-2]:checked ~ label .slide-2-position {
-  background-image: url(../img/index-slide-check.png);
+  background-image: url(../img/index_slide_check.png);
 }
 
 input[id=slide-3]:checked ~ label .slide-3-position {
-  background-image: url(../img/index-slide-check.png);
+  background-image: url(../img/index_slide_check.png);
 }
 .slide-1-position {
   margin-top: 317px;
@@ -421,6 +421,7 @@ input[id=slide-3]:checked ~ label .slide-3-position {
   width: 1157px;
   margin: auto;
   margin-top: 80px;
+  padding-left: 15px;
 }
 
 .about-us ul {
@@ -429,7 +430,7 @@ input[id=slide-3]:checked ~ label .slide-3-position {
 }
 
 .about-us li {
-  background-image: url(../img/Red_line.png);
+  background-image: url(../img/red_line.png);
   background-repeat: no-repeat;
   background-position-y: 11px;
   padding-left: 35px;
@@ -524,6 +525,10 @@ th.under-percent {
 
 /*.Блок с логотипами*/
 
+.logos-all {
+  padding-left: 17px;
+}
+
 .logos {
   display: flex;
   justify-content: space-between;
@@ -598,7 +603,7 @@ fieldset {
   width: 2em;
   height: 2em;
   margin-left: -37px;
-  background-image: url(../img/radio-off.svg);
+  background-image: url(../img/radio_off.svg);
   opacity: 0.4;
   color: #283136;
   background-repeat: no-repeat;
@@ -609,7 +614,7 @@ fieldset {
 }
 
 .visually-hidden:checked + .radio-filter {
-  background-image: url(../img/radio-on.svg);
+  background-image: url(../img/radio_on.svg);
   background-repeat: no-repeat;
 }
 
@@ -671,7 +676,7 @@ fieldset {
   height: 1.5em;
   margin-left: -37px;
   margin-top: -4px;
-  background-image: url(../img/checkbox-off.svg);
+  background-image: url(../img/checkbox_off.svg);
   opacity: 0.4;
   color: #283136;
   background-repeat: no-repeat;
@@ -683,7 +688,7 @@ fieldset {
 }
 
 .visually-hidden:checked + .checkbox-filter {
-  background-image: url(../img/checkbox-on.svg);
+  background-image: url(../img/checkbox_on.svg);
   background-repeat: no-repeat;
 }
 
@@ -746,8 +751,8 @@ fieldset {
   margin-top: 80px;
   background-color: #A6A6A6;
   background:
-  url(../img/map-marker_1.png) no-repeat 822px 86px,
-  url(../img/map-1.jpg) no-repeat;
+  url(../img/map_marker_1.png) no-repeat 822px 86px,
+  url(../img/map_1.jpg) no-repeat;
   height: 416px;
 }
 
